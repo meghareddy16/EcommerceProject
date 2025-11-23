@@ -20,14 +20,14 @@ connectDb();
 
 // console.log(__dirname);
 
-app.use("/api/contacts" ,require ("./routes/contactRoute"));
-app.use("/api/users" ,require ("./routes/userRoute"));
-app.use("/api/products", require("./routes/productRoute"));
-app.use("/api/category", require("./routes/categoryRoute"));
-app.use("/api/orders", require("./routes/orderRoute"));
+app.use("/contacts" ,require ("./routes/contactRoute"));
+app.use("/users" ,require ("./routes/userRoute"));
+app.use("/products", require("./routes/productRoute"));
+app.use("/category", require("./routes/categoryRoute"));
+app.use("/orders", require("./routes/orderRoute"));
 // Serve uploaded images under /uploads route
-app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
-app.use("/api/payments", require("./routes/paymentRoute"));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use("/payments", require("./routes/paymentRoute"));
 
 app.use(errorHandler);
 app.listen(port, () => {
