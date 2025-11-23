@@ -1,7 +1,7 @@
 import { useState } from "react";
 import api from "../api/axios";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -80,9 +80,9 @@ const Register = () => {
                     </button>
                     <p className="text-lg mt-3 text-center">
                         Already have an account?{" "}
-                        <a href="/login" className="text-blue-600 text-lg hover:underline">
+                        <Link href="/login" className="text-blue-600 text-lg hover:underline">
                             Login
-                        </a>
+                        </Link>
                     </p>
                 </div>
 

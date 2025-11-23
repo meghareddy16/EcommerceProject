@@ -67,12 +67,13 @@ const UserLogin = () =>{
                 Sign In
               </button>
               
-              <a class="inline-block align-baseline font-bold text-lg text-blue-500 hover:text-blue-800" href="/forgotPassword">
+              <Link class="inline-block align-baseline font-bold text-lg text-blue-500 hover:text-blue-800" to="/forgotPassword">
                 Forgot Password?
-              </a>
+              </Link>
             </div>
             <div classname="flex justify-center">
-            <p className="text-lg text-center p-2">Don't have an account?  <a href="/" class="text-bold text-lg hover:underline text-blue-500"> Sign Up</a></p>
+            <p className="text-lg text-center p-2">Don't have an account?  
+              <Link to="/" class="text-bold text-lg hover:underline text-blue-500"> Sign Up</Link></p>
             </div>
           </form>
         </div>
