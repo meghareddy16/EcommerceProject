@@ -8,8 +8,8 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-   origin: 'http://localhost:5173',
-  // origin: '*', //only for development purpose allows all origins
+  //  origin: 'http://localhost:5173',
+  origin: 'https://ecommerce-project-cyan-rho.vercel.app', //only for development purpose allows all origins
   credentials: true
 }));
 
