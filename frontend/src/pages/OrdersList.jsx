@@ -32,11 +32,11 @@ const OrdersList = () => {
           <p class="text-gray-700 text-lg">Email : {order.email} </p>
           <div className="mt-2 text-xl">
             <strong>Products:</strong>
-            <ul className="list-disc ml-6 mt-1 text-lg flex">
+            <ul className=" ml-4 mt-1 text-lg flex px-2">
               {order.products.map((p) => (
                 <li key={p._id} className="text-gray-600">
                   <img src={`https://backend-u4x0.onrender.com/uploads/${p.productId?.imageUrl}`} className="w-25 h-25 rounded"/>
-                  {p.productId?.itemName} — ₹{p.productId?.price} × {p.quantity}
+                  <p classname="">{p.productId?.itemName} — ₹{p.productId?.price} × {p.quantity}</p>
                 </li>
               ))}
             </ul>
