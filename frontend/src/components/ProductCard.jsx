@@ -19,7 +19,7 @@ function ProductCard({product}){
 
 <div class="m-3 p-0 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <Link to="#">
-        <img class="w-full h-70 object-cover rounded-t-lg" src={`http://localhost:8001/api/uploads/${product.imageUrl}`} alt={product.itemName} />
+        <img class="w-full h-70 object-cover rounded-t-lg" src={`https://backend-u4x0.onrender.com/uploads/${product.imageUrl}`} alt={product.itemName} />
     </Link>
     <div class="p-5 mb-2">
         <Link to="#">
