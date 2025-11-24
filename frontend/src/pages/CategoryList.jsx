@@ -118,7 +118,7 @@ function CategoryList(){
                 <Link to={`/category/${thing._id}`}>
                   <img
                       className="w-50 h-45 rounded object-cover mx-auto"
-                      src={`http://localhost:8001/api/uploads/${thing.imageUrl}`}
+                      src={`https://backend-u4x0.onrender.com/uploads/${thing.imageUrl}`}
                       alt="Category"
                     />
                     {/* <p className="font-bold text-xl py-2">{thing.catName}</p> */}

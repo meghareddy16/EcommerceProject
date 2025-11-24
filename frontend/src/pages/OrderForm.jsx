@@ -96,7 +96,7 @@ const OrderForm = () => {
 
         if (verifyRes.data.success) {
           toast.success("Payment Successful!");
-
+          navigate('/orderList')
           // Now place order in MongoDB
           await placeOrder("Online", verifyData);
         } else {
