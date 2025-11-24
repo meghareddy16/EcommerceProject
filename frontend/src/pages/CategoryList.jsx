@@ -69,7 +69,7 @@ function CategoryList(){
                   <div className="text-center">
                     <img
                       className="rounded w-40 h-40 object-cover mx-auto"
-                      src={`http://localhost:8001/api/uploads/${thing.imageUrl}`}
+                      src={`https://backend-u4x0.onrender.com/uploads/${thing.imageUrl}`}
                       alt="Category"
                     />
                     {/* <p className="font-bold text-xl py-2">{thing.catName}</p> */}

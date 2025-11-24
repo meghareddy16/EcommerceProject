@@ -29,7 +29,7 @@ function EditProduct() {
                     setDescription(p.description);
                     setCategory(p.category?._id || p.category || "");
                     setStockQuantity(p.stockQuantity);
-                    setPreview(`http://localhost:8001/api/uploads/${p.imageUrl}`)
+                    setPreview(`https://backend-u4x0.onrender.com/uploads/${p.imageUrl}`)
                     // console.log(`Product with ${id} fetched Successfully`);
                 }
             catch(error){

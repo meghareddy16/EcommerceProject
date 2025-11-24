@@ -35,6 +35,7 @@ const OrdersList = () => {
             <ul className="list-disc ml-6 mt-1 text-lg">
               {order.products.map((p) => (
                 <li key={p._id} className="text-gray-600">
+                  <img src={`https://backend-u4x0.onrender.com/uploads/${p.imageUrl}`} className="w-25 h-25 rounded"/>
                   {p.productId?.itemName} — ₹{p.productId?.price} × {p.quantity}
                 </li>
               ))}

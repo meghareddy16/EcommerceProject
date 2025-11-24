@@ -23,7 +23,7 @@ function EditCategory() {
                     setName(c.catName);
                     setDescription(c.description);
                     // setImage(c.imageUrl);
-                    setPreview(`http://localhost:8001/api/uploads/${c.imageUrl}`)
+                    setPreview(`https://backend-u4x0.onrender.com/uploads/${c.imageUrl}`)
                     // console.log(`Category with ${id} fetched Successfully`);
                 }
             catch(error){
