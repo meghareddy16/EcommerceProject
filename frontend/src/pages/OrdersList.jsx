@@ -26,17 +26,17 @@ const OrdersList = () => {
           <div  class="px-6 py-4">
           <div class="text-xl mb-2"><strong>Order Id : </strong>{order._id}</div>
           <div class="text-xl mb-2"><strong>Razorpay Id : </strong>{order.razorpayOrderId}</div>
-          <p class="text-gray-700 text-lg">Order Status: {order.status} </p>
-          <p class="text-gray-700 text-lg">Payment Method : {order.paymentMethod} </p>
-          <p class="text-gray-700 text-lg">Total : {order.totalAmount} </p>
-          <p class="text-gray-700 text-lg">Email : {order.email} </p>
+          <p class="text-gray-700 text-lg font-semibold">Order Status: {order.status} </p>
+          <p class="text-gray-700 text-lg font-semibold">Payment Method : {order.paymentMethod} </p>
+          <p class="text-gray-700 text-lg font-semibold">Total : {order.totalAmount} </p>
+          <p class="text-gray-700 text-lg font-semibold">Email : {order.email} </p>
           <div className="mt-2 text-xl">
             <strong>Products:</strong>
-            <ul className=" ml-4 mt-1 text-lg flex px-2">
+            <ul className=" ml-1 mt-1 text-lg flex px-1">
               {order.products.map((p) => (
                 <li key={p._id} className="text-gray-600">
                   <img src={`https://backend-u4x0.onrender.com/uploads/${p.productId?.imageUrl}`} className="w-25 h-25 rounded"/>
-                  <p classname="">{p.productId?.itemName} — ₹{p.productId?.price} × {p.quantity}</p>
+                  <p classname="font-semibold">{p.productId?.itemName} — ₹{p.productId?.price} × {p.quantity}</p>
                 </li>
               ))}
             </ul>
