@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { ShoppingBag, Trash } from "lucide-react";
 
 const Cart = () => {
 
@@ -30,7 +31,7 @@ const Cart = () => {
       <h2 className="text-2xl font-bold mb-6 text-center">Your Cart</h2>
 
       {cartItems.length === 0 ? (
-        <p className="text-center text-gray-600">Your cart is empty 🛒</p>
+        <p className="text-center text-gray-600">Your cart is empty <ShoppingBag/></p>
       ) : (
         <>
           <div className="space-y-4">
@@ -75,7 +76,7 @@ const Cart = () => {
                     onClick={() => removeFromCart(item._id)}
                     className="text-red-600 hover:underline"
                   >
-                    Remove
+                    <Trash/>
                   </button>
                 </div>
               </div>
